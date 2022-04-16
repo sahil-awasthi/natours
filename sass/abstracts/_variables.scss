@@ -12,12 +12,14 @@ $color-tertiary-dark: #5643fa;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
-$color-white: #fff;
 $color-grey-dark: #777;
+$color-grey-dark-1: #999;
+
+$color-white: #fff;
 $color-black: #000;
 
 // SHADOW
-$shadow-1: rgba($color-black, 0.15);
+$shadow-1: 0 1.5rem 4rem rgba($color-black, 0.15);
 
 // FONT
 $default-font-size: 1.6rem;
@@ -29,3 +31,6 @@ $gutter-horizontal: 6rem;
 
 // COMPONENT SPECIFIC
 $card-height: 52rem;
+
+// BORDER RADIUS
+$border-radius-small: 3px;
