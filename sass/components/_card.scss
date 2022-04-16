@@ -14,9 +14,9 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 3px;
+    border-radius: $border-radius-small;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem $shadow-1;
+    box-shadow: $shadow-1;
 
     &--front {
       background-color: $color-white;
