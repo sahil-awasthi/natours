@@ -10,6 +10,10 @@
   visibility: hidden;
   transition: all 0.3s;
 
+  @include respond(phone) {
+    overflow: scroll;
+  }
+
   &__content {
     @include center-horizontal-vertical;
     width: 75%;
@@ -21,11 +25,24 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @include respond(tab-land) {
+      display: block;
+    }
   }
 
   &__left {
     width: 33.5%;
     display: table-cell;
+
+    @include respond(tab-land) {
+      width: 100%;
+      display: block;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__right {
@@ -33,10 +50,24 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+      display: block;
+      padding: 3rem 1.5rem;
+    }
   }
+
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(tab-land) {
+      border: 1rem solid $color-white;
+      width: 50%;
+      display: inline-block;
+      float: left;
+    }
   }
   &__text {
     font-size: 1.4rem;
